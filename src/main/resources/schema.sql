@@ -16,7 +16,7 @@ CREATE TABLE orders(
 CREATE TABLE users(
     username varchar_ignorecase(50) not null primary key,
     password varchar_ignorecase(500) not null,
-    enabled password not null
+    enabled boolean not null
 );
 
 CREATE table authorities(

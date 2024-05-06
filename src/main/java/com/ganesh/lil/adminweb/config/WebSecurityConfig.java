@@ -34,8 +34,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new JdbcUserDetailsManager(dataSource);
     }
 
-    @Bean
-    public static PasswordEncoder getPasswordEncoder(){
-        return NoOpPasswordEncoder.getInstance();
-    }
 }
