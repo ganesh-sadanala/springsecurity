@@ -19,3 +19,24 @@
   - Usecase: Ready heavy and less updates
   - Lightweight (lower bandwidth)
   - Large data handling (BigData)
+
+- OAuth2
+  - #clientid #scope -> permission dialog
+  - AuthorizationGrant -> authorizationcode
+  - #clientid #clientsecret #authorizationcode -> accesstoken(short lived)
+  - refreshtoken(long lived) -> accesstoken
+  
+- CommonOAuth2Provider
+  - Provides native support for Okta, Google, Facebook, ..
+  - property based configuration in SpringBoot
+  - Client side OAuth integration
+  - 3rd party login
+- AuthorizationServer
+  - @EnableAuthorizationServer
+  - AuthorizationServerConfigurerAdapter to configure it
+  - support various grant types
+- Resource Server
+  - @EnableResourceServer
+- OAuth2 Client
+  - @EnableOauth2Client
+  - @oauth2RestTemplate
