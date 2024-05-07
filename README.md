@@ -1,3 +1,5 @@
+- InMemoryAuth
+- JdbcAuth
 - Basic Auth disadvantage
   - Default design
   - No logoff feature
@@ -6,3 +8,14 @@
   - Allow customization of form
   - logoff feature
   - provides **remember me** option
+
+
+- LDAP Authentication
+  - Lightweight Directory Access Protocol
+  - User directory structure (hierarchial data search)
+  - Built into many operating systems
+  - interoperable between many OS and components
+  - Scalable
+  - Usecase: Ready heavy and less updates
+  - Lightweight (lower bandwidth)
+  - Large data handling (BigData)
